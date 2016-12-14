@@ -1,17 +1,17 @@
 body {
   overflow-y: scroll;
-  background-color: #CF6766;
+  background-color: #e56037;
   margin: 0;
   margin-top: 45vh;
 }
 
 p {
-  margin: 0;
+  margin: 2vh;
   margin-left: 1vw;
   border: 0;
-  font-family: sans-serif;
+  font-family: "Trebuchet MS";
   font-size: 1.5em;
-  color : white;
+  color: white;
 }
 
 ul {
@@ -24,16 +24,18 @@ a {
   text-decoration: none;
 }
 
+dd::before {
+  content:"> ";
+}
+
 .menubar {
-  border-top: 6px solid;
-  border-color: #dbdbdb;
   margin: 0;
   padding:0;
   list-style: none;
   text-align: left;
-  background: white;
+  background: http://validator.w3.org;
   position: fixed;
-
+  background-color: #221e1f;
 }
 
 .menubar li {
@@ -43,28 +45,43 @@ a {
 
 .menubar a {
   display:inline-block;
-  font-family: Arial;
+  font-family: "Trebuchet MS";
   font-size: 1.4em;
   text-align:right;
-  color:black;
+  color: #e6704a;
   padding:1em;
+  margin-left: -0.1em;
   text-decoration: none;
 }
 
 .menubar a:hover {
   color: #B6B6F6;
+  background-color: transparent;
+}
+
+.mobileButtonBox {
+  width: 10vw;
+  height: 10vw;
+  background-color: #e56037;
+}
+
+#bodyList {
+  list-style: decimal;
+  color:white;
+  margin-left: 4vw;
 }
 
 #header {
-  font-family: sans-serif;
+  font-family: "Trebuchet MS";
   font-size: 13vw;
+  font-weight: bold;
   text-transform: uppercase;
   color : white;
 }
 
 #subheader {
-  font-family: sans-serif;
-  font-size: 4vw;
+  font-family: "Trebuchet MS";
+  font-size: 3.5vw;
   text-transform: uppercase;
   color : white;
 }
@@ -73,5 +90,6 @@ a {
   margin-top: 8em;
   margin-bottom: 20em;
   margin-right: 10em;
-
+  text-align: justify;
+  font-family: "Trebuchet MS";
 }
