@@ -1,17 +1,17 @@
 body {
   overflow-y: scroll;
-  background-color: #e56037;
+  background-color: #d8d8d8;
   margin: 0;
-  margin-top: 45vh;
+  margin-top: 15vw;
 }
 
 p {
   margin: 2vh;
   margin-left: 1vw;
   border: 0;
-  font-family: "Trebuchet MS";
+  font-family: "Verdana";
   font-size: 1.5em;
-  color: white;
+  color: #3f3f3f;
 }
 
 ul {
@@ -25,7 +25,11 @@ a {
 }
 
 dd::before {
-  content:"> ";
+  content:"•- ";
+}
+
+hil1 {
+  color: #ffd400;
 }
 
 .menubar {
@@ -35,7 +39,7 @@ dd::before {
   text-align: left;
   background: http://validator.w3.org;
   position: fixed;
-  background-color: #221e1f;
+  background-color: white;
 }
 
 .menubar li {
@@ -45,11 +49,13 @@ dd::before {
 
 .menubar a {
   display:inline-block;
-  font-family: "Trebuchet MS";
+  font-family: "Verdana";
   font-size: 1.4em;
   text-align:right;
-  color: #e6704a;
+  color: #d8d8d8;
   padding:1em;
+  border: 0.1em;
+  border-color: 'red';
   margin-left: -0.1em;
   text-decoration: none;
 }
@@ -67,29 +73,53 @@ dd::before {
 
 #bodyList {
   list-style: decimal;
-  color:white;
+  color:#3f3f3f;
   margin-left: 4vw;
 }
 
 #header {
-  font-family: "Trebuchet MS";
+  font-family: "Verdana";
   font-size: 13vw;
+  margin: 0;
   font-weight: bold;
   text-transform: uppercase;
-  color : white;
+  color : #3f3f3f;
 }
 
 #subheader {
-  font-family: "Trebuchet MS";
+  font-family: "Verdana";
   font-size: 3.5vw;
   text-transform: uppercase;
-  color : white;
+  text-align: justify;
+  color : #3f3f3f;
+}
+
+#subsubheader {
+  font-family: "Verdana";
+  font-size: 2.5vw;
+  text-transform: uppercase;
+  color : #3f3f3f;
+}
+
+#closecaption {
+  font-family: "Verdana";
+  font-size: 1.0vw;
+  text-transform: uppercase;
+  color : #3f3f3f;
 }
 
 #bodytext {
   margin-top: 8em;
   margin-bottom: 20em;
   margin-right: 10em;
+  text-align: left;
+  font-family: "Verdana";
+}
+
+#bodytextjustify {
+  margin-top: 8em;
+  margin-bottom: 20em;
+  margin-right: 10em;
   text-align: justify;
-  font-family: "Trebuchet MS";
+  font-family: "Verdana";
 }
