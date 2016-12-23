@@ -67,9 +67,28 @@ dd::before {
   height: 10vw;
   background-color: #e56037;
 }
+
+#backgroundImage {
+  top: 0;
+  left: 0;
+  margin: 0;
+  border: 0;
+  width: 100em;
+  position: absolute;
+}
+
+#backgroundImageFormat {
+  width:100em;
+  left: -1em;
+  top: -10em;
+  position: fixed;
+  -webkit-filter: blur(4px);
+}
+
 #webTitle {
   width: 100vw;
   height: 65vh;
+  position: relative;
 }
 #bodyList {
   list-style: decimal;
@@ -82,7 +101,8 @@ dd::before {
   font-size: 10vw;
   margin: 0;
   text-transform: capitalize;
-  color : #474747;
+  /*color : #474747;*/
+  color: white;
 }
 
 #subheader {
@@ -90,7 +110,15 @@ dd::before {
   font-size: 3.5vw;
   text-transform: capitalize;
   text-align: justify;
-  color : #474747;
+  color: #474747;
+}
+
+#subheadertitle {
+  font-family: "Verdana";
+  font-size: 3.5vw;
+  text-transform: capitalize;
+  text-align: justify;
+  color: white;
 }
 
 #subsubheader {
@@ -104,13 +132,17 @@ dd::before {
   font-family: "Verdana";
   font-size: 1.0vw;
   text-transform: capitalize;
-  color : #474747;
+  color: white;
 }
 
 #bodytext {
+  position: relative;
+  margin: 0 auto;
   margin-bottom: 10em;
-  margin-right: 10em;
   text-align: left;
+  width: 90%;
+  padding: 0.3em;
+  background-color: rgba(255, 255, 255, 0.7);
   font-family: "Verdana";
 }
 
@@ -120,15 +152,6 @@ dd::before {
   margin-right: 10em;
   text-align: justify;
   font-family: "Verdana";
-}
-
-#backgroundImage {
-  top: -15em;
-  left: -15em;
-  margin: 0;
-  border: 0;
-  width: 50%;
-  position: absolute;
 }
 
 #gradeInfo p {
