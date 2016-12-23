@@ -3,55 +3,79 @@
   <head>
     <meta charset="utf-8">
     <title>Omar Ali 2016/17</title>
+    <link rel="icon" href="images/favion.ico" type="image/x-icon">
     <link rel="stylesheet" title="style" href="styles/stylesheet.css">
-    <p id="header">Log</p>
-    <p id="subheader">A brief history of the course.</p>
+
+    <div id = "webTitle">
+      <div id = "backgroundImage"> <img src="images/backgorund_s.png" alt="Background Sphere"></div>
+      <p id = "header">Log</p>
+      <p id = "subheader">A brief history of the course.</p>
+    </div>
+
   </head>
-
   <body>
-
-    <div id="bodytext">
-      <p id="subheader">WEB F1 (Web Foundation)</p>
-      <p id="subsubheader">Starting a webserver with WINSCP</p>
+    <div id = "bodytext">
+      <p id = "subheader">WEB F1 (Web Foundation)</p>
+      <p id = "subsubheader">Starting a webserver with WINSCP</p>
       <ul>
-        <li id="bodyList">Connect to your VM using SSH (Secure Shell – e.g. PuTTY or the Chrome plugin).</li>
-        <li id="bodyList">Select the “me” folder (where you have already uploaded your web page):</li>
-        <dd id="bodyList">cd me↵</dd>
-        <li id="bodyList">Run the Web server</li>
-        <dd id="bodyList">http-server↵</dd>
-        <dd id="bodyList">Ignore the IP addresses that the web server prints out.</dd>
-        <li id="bodyList">Ignore the IP addresses that the web server prints out.</li>
-        <dd id="bodyList">Note that the server prints out a couple of IP addresses that won't work. You need to use the IP address shown on <a href="http://port.ac.uk/myvm">http://port.ac.uk/myvm</a>!</dd>
-        <dd id="bodyList">If you see the page you made, congratulations, you’ve just built and deployed a web site.</dd>
-        <dd id="bodyList">If you don’t see your page, try and work out where and why it’s failing, and fix it!</dd>
+        <li id = "bodyList">Connect to your VM using SSH (Secure Shell – e.g. PuTTY or the Chrome plugin).</li>
+        <li id = "bodyList">Select the “me” folder (where you have already uploaded your web page):</li>
+        <dd id = "bodyList">cd me↵</dd>
+        <li id = "bodyList">Run the Web server</li>
+        <dd id = "bodyList">http-server↵</dd>
+        <dd id = "bodyList">Ignore the IP addresses that the web server prints out.</dd>
+        <li id = "bodyList">Ignore the IP addresses that the web server prints out.</li>
+        <dd id = "bodyList">Note that the server prints out a couple of IP addresses that won't work. You need to use the IP address shown on <a href="http://port.ac.uk/myvm">http://port.ac.uk/myvm</a>!</dd>
+        <dd id = "bodyList">If you see the page you made, congratulations, you’ve just built and deployed a web site.</dd>
+        <dd id = "bodyList">If you don’t see your page, try and work out where and why it’s failing, and fix it!</dd>
       </ul>
 
-      <p id="subheader">CAR (Computer Architecture)</p>
-      <p id="subsubheader">Useful relationships</p>
+      <p id = "subheader">CAR (Computer Architecture)</p>
+      <p id = "subsubheader">Useful relationships</p>
       <ul>
-        <li id="bodyList">A + 0 = A  </li>
-        <li id="bodyList">A + 1 = 1  </li>
-        <li id="bodyList">A ^ 1 = A  </li>
-        <li id="bodyList">A ^ 0 = 0  </li>
-        <li id="bodyList">A + A’ = 1 </li>
-        <li id="bodyList">A ^ A’= 0  </li>
-
+        <li id = "bodyList">A + 0 = A  </li>
+        <li id = "bodyList">A + 1 = 1  </li>
+        <li id = "bodyList">A ^ 1 = A  </li>
+        <li id = "bodyList">A ^ 0 = 0  </li>
+        <li id = "bodyList">A + A’ = 1 </li>
+        <li id = "bodyList">A ^ A’ = 0  </li>
       </ul>
 
-      <p id="subheader">INTPROG (Intro' Programming)</p>
+      <p id = "subheader">INTPROG (Intro' Programming)</p>
+      <p id = "subsubheader">Python</p>
 
-      <p id="subheader">INDADD (Databases)</p>
+      <p id = "subsubheader">Java</p>
 
-      <p id="subheader">NETFUN (network fundamentals)</p>
-      <p id="subsubheader">General Ignorance</p>
+      <p id = "subheader">INDADD (Databases)</p>
+      <p id = "subsubheader">SQL commands</p>
       <ul>
-        <li id ="bodyList">Latency - Measured in milliseconds</li>
-        <li id ="bodyList">Reliablity - Some tasks need less reliablity than other. Credit card payments need more reliablity than a confirmation email.</li>
-        <li id ="bodyList">10 Base T = 10 mbits/s = capacity of network.</li>
-        <li id ="bodyList"> </li>
-        <li id ="bodyList"> </li>
-        <li id ="bodyList"> </li>
+        <li id = "bodyList"><strong>List all databases</strong> - SHOW DATABASES;</li>
+        <li id = "bodyList"><strong>Create datebase</strong> - CREATE DATABASE [name];</li>
+        <li id = "bodyList"><strong>Use a database</strong> - USE [name];</li>
+        <li id = "bodyList"><strong>List tables in a database</strong> - SHOW TABLES;</li>
+        <li id = "bodyList"><strong>Show the structure of a table</strong> - DESCRIBE [name];</li>
+        <li id = "bodyList"><strong>Delete a database</strong> - DROP DATABASE [name];</li>
+        <br>
+        <li id = "bodyList"><strong><a href="http://port.ac.uk/myvm">login</a></strong> = mysql -u root -p root</li>
       </ul>
+
+      <p id = "subheader">NETFUN (Network Fundamentals)</p>
+      <p id = "subsubheader">General Ignorance</p>
+      <ul>
+        <li id = "bodyList"><strong>Latency</strong> - Measured in milliseconds</li>
+        <li id = "bodyList"><strong>Reliablity</strong> - Some tasks need less reliablity than other. Credit card payments need more reliablity than a confirmation email.</li>
+        <li id = "bodyList"><strong>10 Base T</strong> = 10 mbits/s = capacity of network.</li>
+        <li id = "bodyList"><strong>Hub</strong> - Half duplex. Sends packets to all nodes</li>
+        <li id = "bodyList"><strong>Switch</strong> - Full duplex. Only sends packets to the correct recipient.</li>
+        <li id = "bodyList"><strong>Periodic signal</strong> - Follows a pattern.</li>
+        <li id = "bodyList"><strong>Aperiodic signal</strong> - Doesn't follow a pattern.</li>
+        <li id ="bodyList"><strong>Time</strong> = 1/frequency(Amount of time it takes to complete one signal)</li>
+        <li id = "bodyList"><strong>Low frequency</strong> - higher strength, and the further it can go</li>
+        <li id = "bodyList"><strong>Peer to Peer</strong></li>
+        <dd id = "bodyList"><strong>Advantages</strong> - Instantly send files between peers in network</dd>
+        <dd id = "bodyList"><strong>Disadvantages</strong> - A virus can spread through the entire network and access all files</dd>
+      </ul>
+
     </div>
 
     <ul class="menubar">

@@ -1,6 +1,7 @@
 body {
   overflow-y: scroll;
-  background-color: #d8d8d8;
+  background-color: #edeced;
+  background-image: url("images/image.png");
   margin: 0;
   margin-top: 15vw;
 }
@@ -10,8 +11,8 @@ p {
   margin-left: 1vw;
   border: 0;
   font-family: "Verdana";
-  font-size: 1.5em;
-  color: #3f3f3f;
+  font-size: 1.0em;
+  color: #474747;
 }
 
 ul {
@@ -28,10 +29,6 @@ dd::before {
   content:"•- ";
 }
 
-hil1 {
-  color: #ffd400;
-}
-
 .menubar {
   margin: 0;
   padding:0;
@@ -44,7 +41,7 @@ hil1 {
 
 .menubar li {
   display: inline;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .menubar a {
@@ -52,7 +49,7 @@ hil1 {
   font-family: "Verdana";
   font-size: 1.4em;
   text-align:right;
-  color: #d8d8d8;
+  color: #474747;
   padding:1em;
   border: 0.1em;
   border-color: 'red';
@@ -70,47 +67,48 @@ hil1 {
   height: 10vw;
   background-color: #e56037;
 }
-
+#webTitle {
+  width: 100vw;
+  height: 100vh;
+}
 #bodyList {
   list-style: decimal;
-  color:#3f3f3f;
-  margin-left: 4vw;
+  color:#474747;
+  margin-left: 3em;
 }
 
 #header {
   font-family: "Verdana";
-  font-size: 13vw;
+  font-size: 10vw;
   margin: 0;
-  font-weight: bold;
-  text-transform: uppercase;
-  color : #3f3f3f;
+  text-transform: capitalize;
+  color : #474747;
 }
 
 #subheader {
   font-family: "Verdana";
   font-size: 3.5vw;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-align: justify;
-  color : #3f3f3f;
+  color : #474747;
 }
 
 #subsubheader {
   font-family: "Verdana";
   font-size: 2.5vw;
-  text-transform: uppercase;
-  color : #3f3f3f;
+  text-transform: capitalize;
+  color : #474747;
 }
 
 #closecaption {
   font-family: "Verdana";
   font-size: 1.0vw;
-  text-transform: uppercase;
-  color : #3f3f3f;
+  text-transform: capitalize;
+  color : #474747;
 }
 
 #bodytext {
-  margin-top: 8em;
-  margin-bottom: 20em;
+  margin-bottom: 10em;
   margin-right: 10em;
   text-align: left;
   font-family: "Verdana";
@@ -122,4 +120,19 @@ hil1 {
   margin-right: 10em;
   text-align: justify;
   font-family: "Verdana";
+}
+
+#backgroundImage {
+  top: -15em;
+  left: -15em;
+  margin: 0;
+  border: 0;
+  width: 50%;
+  position: absolute;
+}
+
+#gradeInfo p {
+  margin: 0;
+  border: 0;
+  margin-left: 3em;
 }
