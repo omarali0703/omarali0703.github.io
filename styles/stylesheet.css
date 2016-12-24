@@ -10,7 +10,8 @@ p {
   margin: 2vh;
   margin-left: 1vw;
   border: 0;
-  font-family: "Verdana";
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.0em;
   color: #474747;
 }
@@ -33,7 +34,7 @@ dd::before {
   margin: 0;
   padding:0;
   list-style: none;
-  text-align: left;
+  text-align: center;
   background: http://validator.w3.org;
   position: fixed;
   background-color: white;
@@ -41,15 +42,16 @@ dd::before {
 
 .menubar li {
   display: inline;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .menubar a {
   display:inline-block;
-  font-family: "Verdana";
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.4em;
-  text-align:right;
-  color: #474747;
+  text-align:center;
+  color: #333333;
   padding:1em;
   border: 0.1em;
   border-color: 'red';
@@ -93,23 +95,26 @@ dd::before {
 }
 #bodyList {
   list-style: decimal;
-  color:#474747;
+  color:#333333;
   margin-left: 3em;
 }
 
 #header {
-  font-family: "Verdana";
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
   font-size: 10vw;
   margin: 0;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  margin-left: 0.10em;
   /*color : #474747;*/
   color: white;
 }
 
 #subheader {
-  font-family: "Verdana";
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
   font-size: 3.5vw;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: justify;
   /*border-bottom: 1px black solid;*/
   border-top: 1px black solid;
@@ -117,24 +122,27 @@ dd::before {
 }
 
 #subheadertitle {
-  font-family: "Verdana";
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
   font-size: 3.5vw;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: justify;
   color: white;
 }
 
 #subsubheader {
-  font-family: "Verdana";
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
   font-size: 2.5vw;
-  text-transform: capitalize;
-  color : #474747;
+  text-transform: uppercase;
+  color : #333333;
 }
 
 #closecaption {
-  font-family: "Verdana";
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.0vw;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: white;
 }
 
@@ -146,7 +154,8 @@ dd::before {
   width: 70%;
   padding: 4em;
   background-color: rgba(255, 255, 255, 1);
-  font-family: "Verdana";
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
 }
 
 #bodyTextFooter {
@@ -164,7 +173,8 @@ dd::before {
   margin-bottom: 20em;
   margin-right: 10em;
   text-align: justify;
-  font-family: "Verdana";
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
 }
 
 #gradeInfo p {
