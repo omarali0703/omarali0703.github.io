@@ -84,8 +84,8 @@ dd::before {
   left: -6em;
   top: -25em;
   position: fixed;
-  opacity: 0.7;
-  -webkit-filter: blur(6px);
+  opacity: 1.0;
+  -webkit-filter: blur(4px);
 }
 
 #webTitle {
@@ -93,6 +93,7 @@ dd::before {
   height: 65vh;
   position: relative;
 }
+
 #bodyList {
   list-style: decimal;
   color:#333333;
@@ -113,11 +114,11 @@ dd::before {
 #subheader {
   font-weight: 100;
   font-family: 'Raleway', sans-serif;
-  font-size: 3.5vw;
+  font-size: 2.6vw;
   text-transform: uppercase;
   text-align: justify;
   /*border-bottom: 1px black solid;*/
-  border-top: 1px black solid;
+  border-top: 1px #d6d6d6 solid;
   color: #474747;
 }
 
@@ -133,16 +134,21 @@ dd::before {
 #subsubheader {
   font-weight: 100;
   font-family: 'Raleway', sans-serif;
-  font-size: 2.5vw;
+  font-size: 1.9vw;
   text-transform: uppercase;
   color : #333333;
 }
 
-#closecaption {
-  font-weight: 100;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.0vw;
+#scrollIndicator {
+  border-top: 1px white solid;
+  position: relative;
+  top: 1.9em;
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
   text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
   color: white;
 }
 
@@ -151,8 +157,10 @@ dd::before {
   margin: 0 auto;
   margin-bottom: 10em;
   text-align: left;
-  width: 70%;
-  padding: 4em;
+  width: 50%;
+  padding: 9em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   background-color: rgba(255, 255, 255, 1);
   font-weight: 100;
   font-family: 'Raleway', sans-serif;
@@ -163,7 +171,7 @@ dd::before {
   margin: 0;
   margin-top: 7em;
   padding-top: 2em;
-  border-top: 1px black solid;
+  border-top: 1px #d6d6d6 solid;
   font-size: 80%;
 }
 
