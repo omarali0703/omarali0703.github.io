@@ -32,10 +32,10 @@ dd::before {
 }
 
 .menubar {
-  margin: 0;
+  margin: 0 auto;
   padding:0;
   list-style: none;
-  text-align: center;
+  text-align: left;
   background: http://validator.w3.org;
   position: fixed;
   background-color: white;
@@ -51,11 +51,9 @@ dd::before {
   font-weight: 100;
   font-family: 'Raleway', sans-serif;
   font-size: 1.4em;
-  text-align:center;
+  text-align:left;
   color: #333333;
-  padding:1em;
-  border: 0.1em;
-  border-color: 'red';
+  padding:0.7em;
   margin-left: -0.1em;
   text-decoration: none;
 }
@@ -63,6 +61,16 @@ dd::before {
 .menubar a:hover {
   color: #B6B6F6;
   background-color: transparent;
+}
+
+.gitLogo {
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+#shiftRight {
+  float: right;
 }
 
 #backgroundImage {
