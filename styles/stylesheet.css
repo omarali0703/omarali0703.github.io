@@ -34,6 +34,9 @@ dd::before {
 .menubar {
   margin: 0 auto;
   padding:0;
+  padding-top: 0.8em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
   list-style: none;
   text-align: left;
   background: http://validator.w3.org;
@@ -223,8 +226,13 @@ dd::before {
     color: #333333;
   }
 
+  .menubar {
+    text-align: center;
+    float: right;
+  }
+
   .menubar a {
-    font-size: 70%;
+    font-size: 100%;
     font-weight: bold;
   }
 }
