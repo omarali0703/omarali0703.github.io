@@ -1,7 +1,6 @@
 body {
   overflow-y: scroll;
   background-color: #edeced;
-  background-image: url("images/image.png");
   margin: 0;
   margin-top: 15vw;
 }
@@ -66,17 +65,38 @@ dd::before {
   padding:0.7em;
   margin-left: -0.1em;
   text-decoration: none;
+  animation-play-state: paused;
 }
 
 .menubar a:hover {
-  color: #B6B6F6;
+  color: #777777;
   background-color: transparent;
+  animation-play-state: running;
 }
+
 
 .gitLogo {
   text-align: center;
   margin: auto;
   display: block;
+}
+
+.sliding-middle-out {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 1px;
+}
+.sliding-middle-out:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 2px;
+	width: 0px;
+	transition: width .9s ease, background-color .9s ease;
+}
+.sliding-middle-out:hover:after {
+	width: 100%;
+	background: #333333;
 }
 
 #shiftRight {
@@ -86,16 +106,16 @@ dd::before {
 #backgroundImage {
   top: 0;
   left: 0;
-  margin: 0;
+  margin: 0 auto;
   border: 0;
-  width: 100em;
   position: absolute;
 }
 
 #backgroundImageFormat {
   width:150em;
-  left: -6em;
-  top: -25em;
+  left: -1em;
+  top: -20em;
+  margin: 0 auto;
   position: fixed;
   opacity: 1.0;
   -webkit-filter: blur(4px);
