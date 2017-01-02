@@ -24,7 +24,15 @@ ul {
 
 a {
   text-decoration: none;
-  color: #F00
+  color: #F00;
+  margin: 0 auto;
+  padding: 0;
+}
+
+video {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
 }
 
 dd::before {
@@ -35,8 +43,6 @@ dd::before {
   margin: 0 auto;
   padding:0;
   padding-top: 0.8em;
-  padding-left: 0.3em;
-  padding-right: 0.3em;
   list-style: none;
   text-align: left;
   background: http://validator.w3.org;
@@ -47,6 +53,7 @@ dd::before {
 .menubar li {
   display: inline;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .menubar a {
@@ -95,7 +102,9 @@ dd::before {
 }
 
 #webTitle {
-  width: 100vw;
+  /*width: 100vw;*/
+  padding: 0;
+  margin: 0;
   height: 65vh;
   position: relative;
 }
@@ -112,7 +121,7 @@ dd::before {
   font-size: 10vw;
   margin: 0;
   text-transform: uppercase;
-  margin-left: 0.10em;
+  margin-left: 0.02em;
   /*color : #474747;*/
   color: white;
 }
@@ -146,11 +155,11 @@ dd::before {
 }
 
 #scrollIndicator {
-  border-top: 1px white solid;
+  border: 1px white solid;
   position: relative;
-  top: 1.9em;
+  top: 2em;
   margin: 0 auto;
-  width: 30%;
+  width: 97.5%;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
@@ -200,12 +209,19 @@ dd::before {
 @media screen and (max-width: 781px) {
   #webTitle {
     height: 40%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #scrollIndicator {
+    display: none;
   }
 
   #bodytext {
     padding: 3em;
     margin-bottom: 20em;
     font-size: 60%;
+    background-color: rgba(255, 255, 255, 0.7);
   }
 
   #header {
@@ -215,7 +231,8 @@ dd::before {
     padding: 0;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    color: #333333;
+    /*color: #333333;*/
+    color: white;
   }
 
   #subheadertitle {
@@ -226,13 +243,17 @@ dd::before {
     color: #333333;
   }
 
+  #shiftRight {
+    display: none;
+  }
+
   .menubar {
     text-align: center;
-    float: right;
+    padding: 0;
   }
 
   .menubar a {
-    font-size: 100%;
+    font-size: 150%;
     font-weight: bold;
   }
 }
