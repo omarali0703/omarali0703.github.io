@@ -99,18 +99,6 @@ dd::before {
 	background: #333333;
 }
 
-#shiftRight {
-  float: right;
-}
-
-#backgroundImage {
-  top: 0;
-  left: 0;
-  margin: 0 auto;
-  border: 0;
-  position: absolute;
-}
-
 #backgroundImageFormat {
   width:150em;
   left: -1em;
@@ -119,6 +107,47 @@ dd::before {
   position: fixed;
   opacity: 1.0;
   -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+
+#backgroundImage {
+  top: 0;
+  left: -20em;
+  margin: 0 auto;
+  border: 0;
+  position: absolute;
+}
+
+#backgroundImage img {
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#backgroundImage img.top {
+  animation-name: crossFade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 30s;
+  animation-direction: alternate;
+}
+
+@keyframes crossFade {
+  0% {
+    opacity:1;
+  }
+  45% {
+    opacity:1;
+  }
+  55% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+#shiftRight {
+  float: right;
 }
 
 #webTitle {
@@ -129,13 +158,13 @@ dd::before {
   position: relative;
 }
 
-#bodyList {
+.bodyList {
   list-style: decimal;
   color:#333333;
   margin-left: 3em;
 }
 
-#header {
+.header {
   font-weight: 100;
   font-family: 'Raleway', sans-serif;
   font-size: 10vw;
@@ -146,7 +175,7 @@ dd::before {
   color: white;
 }
 
-#subheader {
+.subheader {
   font-weight: 100;
   font-family: 'Raleway', sans-serif;
   font-size: 2.6vw;
@@ -157,7 +186,7 @@ dd::before {
   color: #474747;
 }
 
-#subheadertitle {
+.subheadertitle {
   font-weight: 100;
   font-family: 'Raleway', sans-serif;
   font-size: 3.5vw;
@@ -166,7 +195,7 @@ dd::before {
   color: white;
 }
 
-#subsubheader {
+.subsubheader {
   font-weight: 100;
   font-family: 'Raleway', sans-serif;
   font-size: 1.9vw;
@@ -174,7 +203,7 @@ dd::before {
   color : #333333;
 }
 
-#scrollIndicator {
+.scrollIndicator {
   border: 1px white solid;
   position: relative;
   top: 2em;
@@ -187,7 +216,7 @@ dd::before {
   color: white;
 }
 
-#bodytext {
+.bodytext {
   position: relative;
   margin: 0 auto;
   margin-bottom: 10em;
@@ -201,23 +230,13 @@ dd::before {
   font-family: 'Raleway', sans-serif;
 }
 
-#bodyTextFooter {
+.bodyTextFooter {
   text-align: center;
   margin: 0;
   margin-top: 7em;
   padding-top: 2em;
   border-top: 1px #d6d6d6 solid;
   font-size: 80%;
-}
-
-
-#bodytextjustify {
-  margin-top: 8em;
-  margin-bottom: 20em;
-  margin-right: 10em;
-  text-align: justify;
-  font-weight: 100;
-  font-family: 'Raleway', sans-serif;
 }
 
 #gradeInfo p {
@@ -227,24 +246,27 @@ dd::before {
 }
 
 @media screen and (max-width: 781px) {
+  ul {
+    bottom: auto;
+  }
   #webTitle {
     height: 40%;
     width: 100%;
     margin: 0 auto;
   }
 
-  #scrollIndicator {
+  .scrollIndicator {
     display: none;
   }
 
-  #bodytext {
+  .bodytext {
     padding: 3em;
     margin-bottom: 20em;
     font-size: 60%;
     background-color: rgba(255, 255, 255, 0.7);
   }
 
-  #header {
+  .header {
     text-align: center;
     margin: 0 auto;
     width: 50%;
@@ -255,12 +277,12 @@ dd::before {
     color: white;
   }
 
-  #subheadertitle {
+  .subheadertitle {
     text-align: center;
     margin: 0 auto;
     width: 60%;
     margin-bottom: 0.3em;
-    color: #333333;
+    color: white;
   }
 
   #shiftRight {
@@ -268,12 +290,14 @@ dd::before {
   }
 
   .menubar {
+    top: 0;
+
     text-align: center;
     padding: 0;
   }
 
   .menubar a {
-    font-size: 150%;
+    font-size: 3vw;
     font-weight: bold;
   }
 }

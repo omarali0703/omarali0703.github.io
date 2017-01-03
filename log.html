@@ -7,33 +7,36 @@
     <link rel="stylesheet" title="style" href="styles/stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
 
-    <div id = "backgroundImage"> <img id=backgroundImageFormat src="images/london.jpg" alt="London City With Family"></div>
+    <div id = "backgroundImage">
+      <img id=backgroundImageFormat src="images/london.jpg" alt="London City Taken with iPhone">
+      <img id=backgroundImageFormat class="top" src="images/background.jpg" alt="London City Taken with iPhone">
+    </div>
     <div id = "webTitle">
-      <p id = "header">Log</p>
-      <p id = "subheadertitle">A brief history of the course.</p>
-      <div id = "scrollIndicator"></div>
+      <p class = "header">Log</p>
+      <p class = "subheadertitle">A brief history of the course.</p>
+      <div class = "scrollIndicator"></div>
     </div>
 
   </head>
   <body>
-    <div id = "bodytext">
-      <p id = "subheader">WEB F1 (Web Foundation)</p>
-      <p id = "subsubheader">Starting a webserver with WINSCP</p>
+    <div class = "bodytext">
+      <p class = "subheader">WEB F1 (Web Foundation)</p>
+      <p class = "subsubheader">Starting a webserver with WINSCP</p>
       <ul>
-        <li id = "bodyList">Connect to your VM using SSH (Secure Shell – e.g. PuTTY or the Chrome plugin).</li>
-        <li id = "bodyList">Select the “me” folder (where you have already uploaded your web page):</li>
-        <dd id = "bodyList">cd me↵</dd>
-        <li id = "bodyList">Run the Web server</li>
-        <dd id = "bodyList">http-server↵</dd>
-        <dd id = "bodyList">Ignore the IP addresses that the web server prints out.</dd>
-        <li id = "bodyList">Ignore the IP addresses that the web server prints out.</li>
-        <dd id = "bodyList">Note that the server prints out a couple of IP addresses that won't work. You need to use the IP address shown on <a href="http://port.ac.uk/myvm">http://port.ac.uk/myvm</a>!</dd>
-        <dd id = "bodyList">If you see the page you made, congratulations, you’ve just built and deployed a web site.</dd>
-        <dd id = "bodyList">If you don’t see your page, try and work out where and why it’s failing, and fix it!</dd>
+        <li class = "bodyList">Connect to your VM using SSH (Secure Shell – e.g. PuTTY or the Chrome plugin).</li>
+        <li class = "bodyList">Select the “me” folder (where you have already uploaded your web page):</li>
+        <dd class = "bodyList">cd me↵</dd>
+        <li class = "bodyList">Run the Web server</li>
+        <dd class = "bodyList">http-server↵</dd>
+        <dd class = "bodyList">Ignore the IP addresses that the web server prints out.</dd>
+        <li class = "bodyList">Ignore the IP addresses that the web server prints out.</li>
+        <dd class = "bodyList">Note that the server prints out a couple of IP addresses that won't work. You need to use the IP address shown on <a href="http://port.ac.uk/myvm">http://port.ac.uk/myvm</a>!</dd>
+        <dd class = "bodyList">If you see the page you made, congratulations, you’ve just built and deployed a web site.</dd>
+        <dd class = "bodyList">If you don’t see your page, try and work out where and why it’s failing, and fix it!</dd>
       </ul>
-      <p id = "subsubheader">Summary</p>
+      <p class = "subsubheader">Summary</p>
       <p>
-        Over the past year in web foundations 1, we have been researching and studying the world wide web.
+        Over the past year in web foundations 1, we have been researching and studying the world wclasse web.
         This entailed a literature review at the start of the year on reducing personal information exposure
         on the web <a href=litreview.html>(see Literature Review)</a>.
         This helped us develop the research skills that we will defiantly need later on In life and throughout this course.
@@ -50,73 +53,74 @@
         short cuts to write as much code as possible with the least amount of key strokes.
       </p>
 
-      <p id = "subheader">CAR (Computer Architecture)</p>
-      <p id = "subsubheader">Useful relationships</p>
+      <p class = "subheader">CAR (Computer Architecture)</p>
+      <p class = "subsubheader">Useful relationships</p>
       <ul>
-        <li id = "bodyList">A + 0 = A  </li>
-        <li id = "bodyList">A + 1 = 1  </li>
-        <li id = "bodyList">A ^ 1 = A  </li>
-        <li id = "bodyList">A ^ 0 = 0  </li>
-        <li id = "bodyList">A + A’ = 1 </li>
-        <li id = "bodyList">A ^ A’ = 0  </li>
+        <li class = "bodyList">A + 0 = A  </li>
+        <li class = "bodyList">A + 1 = 1  </li>
+        <li class = "bodyList">A ^ 1 = A  </li>
+        <li class = "bodyList">A ^ 0 = 0  </li>
+        <li class = "bodyList">A + A’ = 1 </li>
+        <li class = "bodyList">A ^ A’ = 0  </li>
       </ul>
       <ul>
-        <p id = "subsubheader">Commands DOS/UNIX</p>
-        <li id = "bodyList">Change Directory - cd/cd</li>
-        <li id = "bodyList">Change File Protection - attrib/chmod</li>
-        <li id = "bodyList">Compare Files - comp/diff</li>
-        <li id = "bodyList">Copy File - copy/cp</li>
-        <li id = "bodyList">Delete File - del/rm</li>
-        <li id = "bodyList">Delete Directory - rd/rmdir</li>
-        <li id = "bodyList">Directory List - dir/ls (ls -l)</li>
-        <li id = "bodyList">Edit a File - edit/pico</li>
-        <li id = "bodyList">Environment - st/printenv</li>
-        <li id = "bodyList">Find String in File - find/grep</li>
-        <li id = "bodyList">help - help/man</li>
-        <li id = "bodyList">Make Directory - md/mkdir</li>
-        <li id = "bodyList">Move File - move/mv</li>
-        <li id = "bodyList">Rename File - ren/mv</li>
-        <li id = "bodyList">Show Date and Time - date, time/date</li>
-        <li id = "bodyList">Show Disk Space - chkdsk/df</li>
-        <li id = "bodyList">Show File - type/cat</li>
-        <li id = "bodyList">Show File by Screens - type filename | more/more</li>
-        <li id = "bodyList">Sort Data - sort/sort</li>
+        <p class = "subsubheader">Commands DOS/UNIX</p>
+        <li class = "bodyList">Change Directory - cd/cd</li>
+        <li class = "bodyList">Change File Protection - attrib/chmod</li>
+        <li class = "bodyList">Compare Files - comp/diff</li>
+        <li class = "bodyList">Copy File - copy/cp</li>
+        <li class = "bodyList">Delete File - del/rm</li>
+        <li class = "bodyList">Delete Directory - rd/rmdir</li>
+        <li class = "bodyList">Directory List - dir/ls (ls -l)</li>
+        <li class = "bodyList">Edit a File - edit/pico</li>
+        <li class = "bodyList">Environment - st/printenv</li>
+        <li class = "bodyList">Find String in File - find/grep</li>
+        <li class = "bodyList">help - help/man</li>
+        <li class = "bodyList">Make Directory - md/mkdir</li>
+        <li class = "bodyList">Move File - move/mv</li>
+        <li class = "bodyList">Rename File - ren/mv</li>
+        <li class = "bodyList">Show Date and Time - date, time/date</li>
+        <li class = "bodyList">Show Disk Space - chkdsk/df</li>
+        <li class = "bodyList">Show File - type/cat</li>
+        <li class = "bodyList">Show File by Screens - type filename | more/more</li>
+        <li class = "bodyList">Sort Data - sort/sort</li>
       </ul>
 
-      <p id = "subheader">INTPROG (Intro' Programming)</p>
-      <p id = "subsubheader">Python</p>
+      <p class = "subheader">INTPROG (Intro' Programming)</p>
+      <p class = "subsubheader">Python</p>
 
-      <p id = "subsubheader">Java</p>
+      <p class = "subsubheader">Java</p>
 
-      <p id = "subheader">INDADD (Databases)</p>
-      <p id = "subsubheader">SQL commands</p>
+      <p class = "subheader">INDADD (Databases)</p>
+      <p class = "subsubheader">SQL commands</p>
       <ul>
-        <li id = "bodyList"> List all databases - SHOW DATABASES;</li>
-        <li id = "bodyList"> Create datebase - CREATE DATABASE [name];</li>
-        <li id = "bodyList"> Use a database - USE [name];</li>
-        <li id = "bodyList"> List tables in a database - SHOW TABLES;</li>
-        <li id = "bodyList"> Show the structure of a table - DESCRIBE [name];</li>
-        <li id = "bodyList"> Delete a database - DROP DATABASE [name];</li>
-        <li id = "bodyList"> <a href="http://port.ac.uk/myvm">login</a> = mysql -u root -p root</li>
+        <li class = "bodyList"> List all databases - SHOW DATABASES;</li>
+        <li class = "bodyList"> Create datebase - CREATE DATABASE [name];</li>
+        <li class = "bodyList"> Use a database - USE [name];</li>
+        <li class = "bodyList"> List tables in a database - SHOW TABLES;</li>
+        <li class = "bodyList"> Show the structure of a table - DESCRIBE [name];</li>
+        <li class = "bodyList"> Delete a database - DROP DATABASE [name];</li>
+        <li class = "bodyList"> <a href="http://port.ac.uk/myvm">login</a> = mysql -u root -p root</li>
       </ul>
 
-      <p id = "subheader">NETFUN (Networking)</p>
-      <p id = "subsubheader">General Ignorance</p>
+      <p class = "subheader">NETFUN (Networking)</p>
+      <p class = "subsubheader">General Ignorance</p>
       <ul>
-        <li id = "bodyList"> Latency - Measured in milliseconds</li>
-        <li id = "bodyList"> Reliablity - Some tasks need less reliablity than other. Credit card payments need more reliablity than a confirmation email.</li>
-        <li id = "bodyList"> 10 Base T = 10 mbits/s = capacity of network.</li>
-        <li id = "bodyList"> Hub - Half duplex. Sends packets to all nodes</li>
-        <li id = "bodyList"> Switch - Full duplex. Only sends packets to the correct recipient.</li>
-        <li id = "bodyList"> Periodic signal - Follows a pattern.</li>
-        <li id = "bodyList"> Aperiodic signal - Doesn't follow a pattern.</li>
-        <li id = "bodyList"> Time = 1/frequency(Amount of time it takes to complete one signal)</li>
-        <li id = "bodyList"> Low frequency - higher strength, and the further it can go</li>
-        <li id = "bodyList"> Peer to Peer </li>
-        <dd id = "bodyList"> Advantages - Instantly send files between peers in network</dd>
-        <dd id = "bodyList"> Disadvantages - A virus can spread through the entire network and access all files</dd>
+        <li class = "bodyList"> Latency - Measured in milliseconds</li>
+        <li class = "bodyList"> Reliablity - Some tasks need less reliablity than other. Credit card payments need more reliablity than a confirmation email.</li>
+        <li class = "bodyList"> 10 Base T = 10 mbits/s = capacity of network.</li>
+        <li class = "bodyList"> Hub - Half duplex. Sends packets to all nodes</li>
+        <li class = "bodyList"> Switch - Full duplex. Only sends packets to the correct recipient.</li>
+        <li class = "bodyList"> Periodic signal - Follows a pattern.</li>
+        <li class = "bodyList"> Aperiodic signal - Doesn't follow a pattern.</li>
+        <li class = "bodyList"> Time = 1/frequency(Amount of time it takes to complete one signal)</li>
+        <li class = "bodyList"> Low frequency - higher strength, and the further it can go</li>
+        <li class = "bodyList"> Peer to Peer </li>
+        <dd class = "bodyList"> Advantages - Instantly send files between peers in network</dd>
+        <dd class = "bodyList"> Disadvantages - A virus can spread through the entire network and access all files</dd>
       </ul>
-      <p id = "bodyTextFooter">Copyright©‎ Omar Ali 2016</p>
+      <p class = "bodyTextFooter">Copyright©‎ Omar Ali | <a href="http://port.ac.uk" title="University of Portsmouth Website">University of Portsmouth</a> 2016</p>
+
     </div>
 
     <ul class="menubar">
