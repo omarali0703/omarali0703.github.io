@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <title>Omar Ali 2016/17</title>
@@ -17,6 +18,17 @@
       <div class = "scrollIndicator"></div>
     </header>
 
+    <div class="dropdown">
+      <button onclick="toggle()" class="dropbtn">☰</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="litreview.html">Literature Review</a>
+        <a href="video.html">Video</a>
+        <a href="log.html">Log</a>
+      </div>
+    </div>
+    <script src="menu.js">
+    </script>
     <section class="bodytext">
       <p>Omar Ali | Computer Science | University of Portsmouth | <a href="http://validator.w3.org">http://validator.w3.org</a></p>
       <p class = "subheader">Me</p>
@@ -34,7 +46,7 @@
   <body>
     <ul class="menubar">
       <div class="sliding-middle-out">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" id="selectedPage">Home</a></li>
       </div>
       <div class="sliding-middle-out">
         <li><a href="log.html">Log</a></li>

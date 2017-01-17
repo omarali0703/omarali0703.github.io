@@ -19,6 +19,17 @@
     </header>
   </head>
 
+  <div class="dropdown">
+    <button onclick="toggle()" class="dropbtn">☰</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="litreview.html">Literature Review</a>
+      <a href="video.html">Video</a>
+      <a href="log.html">Log</a>
+    </div>
+  </div>
+  <script src="menu.js">
+  </script>
   <body>
 
     <section class="bodytext">
@@ -130,6 +141,35 @@
         they could well be giving criminals the right information they need to
         breach their personal data and therefore, unknowingly exposed to theft.
       </p>
+      <p class = "subheader">References</p>
+      <p>Camp, L. J. (1999). Web Security and Privacy: An American Perspective. Information Society,
+        15(4), 249-256. doi:10.1080/019722499128411</p>
+      <p>Muftic, S., bin Abdullah, N., & Kounelis, I. (2016). Business Information Exchange System with
+        Security, Privacy, and Anonymity. Journal Of Electrical & Computer Engineering, 1-10.
+        doi:10.1155/2016/7093642</p>
+      <p>Cassim, F. (2015). PROTECTING PERSONAL INFORMATION IN THE ERA OF IDENTITY THEFT:
+        JUST HOW SAFE IS OUR PERSONAL INFORMATION FROM IDENTITY THIEVES?.
+        Potchefstroom Electronic Law Journal, 18(2), 69-110.</p>
+      <p>Kif Leswing (2016). Yahoo Confirms Major Breach - and it could be the largest hack of all time.
+        Retrieved from
+        http://uk.businessinsider.com/yahoo-hack-by-state-sponsored-actor-biggest-of-all-time-2016-
+        9?r=US&IR=T</p>
+      <p>Po-Ching, L., & Pei-Ying, L. (2016). Unintentional and Involuntary Personal Information Leakage on
+        Facebook from User Interactions. KSII Transactions On Internet & Information Systems, 10(7),
+        3301-3318. doi:10.3837/tiis.2016.07.024</p>
+      <p>Lam, F, Chen, K. T. and Chen, L. J. (2008). Involuntary Information Leakage in Social Network
+        Services. Advances in information and Computer Security, Chapter 10 doi: 10.1007/978-3-540-
+        89598-5_11</p>
+      <p>Dave Chaffey (2016). Global social media research summary 2016.
+        Retrieved from
+        http://www.smartinsights.com/social-media-marketing/social-media-strategy/new-global-socialmedia-research/</p>
+      <p>Gallant, D. T. (2011). Protecting Personal Information on Social Networking Sites. School Business
+        Affairs, 77(1), 13-14.</p>
+      <p>Tim Bradshaw, Madhumita Murgia and Adam Samson (2016). ‘State-sponsored actor’ stole data
+        from 500m Yahoo users.
+        Retrieved from
+        https://www.ft.com/content/0ebde3b4-80fb-11e6-8e50-8ec15fb462f4</p>
+
       <p class = "subsubheader">Feedback</p>
       <div id = "gradeInfo">
         <p>Grade: 68/100 (68%)</p>
@@ -157,7 +197,7 @@
         <li><a href="log.html">Log</a></li>
       </div>
       <div class="sliding-middle-out">
-        <li><a href="litreview.html">Literature review</a></li>
+        <li><a href="litreview.html" id="selectedPage">Literature review</a></li>
       </div>
       <div class="sliding-middle-out">
         <li><a href="video.html">Video</a></li>

@@ -37,14 +37,58 @@ video {
 dd::before {
   content:"•- ";
 }
+/*
+*/
 
+.dropbtn {
+    background-color: #474747;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    top: 0;
+    cursor: pointer;
+    position: fixed
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #474747;
+}
+
+.dropdown {
+    position: relative;
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    top: 3em;
+    background-color: #f9f9f9;
+    font-family: 'Raleway', sans-serif;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+/*
+*/
 .menubar {
   margin: 0 auto;
   padding:0;
   padding-top: 0.8em;
   list-style: none;
   text-align: left;
-  background: http://validator.w3.org;
   position: fixed;
   background-color: white;
 }
@@ -97,6 +141,10 @@ dd::before {
 .sliding-middle-out:hover:after {
 	width: 100%;
 	background: #333333;
+}
+
+#selectedPage {
+  color: red;
 }
 
 #backgroundImageFormat {
@@ -250,6 +298,10 @@ dd::before {
     margin: 0 auto;
   }
 
+  .dropdown {
+    display: inline-block;
+  }
+
   .scrollIndicator {
     display: none;
   }
@@ -285,14 +337,6 @@ dd::before {
   }
 
   .menubar {
-    top: 0;
-
-    text-align: center;
-    padding: 0;
-  }
-
-  .menubar a {
-    font-size: 3vw;
-    font-weight: bold;
+    display: none;
   }
 }
