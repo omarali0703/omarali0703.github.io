@@ -64,7 +64,7 @@ dd::before {
 .dropdown-content {
     display: none;
     position: fixed;
-    top: 3em;
+    top: 3.2em;
     background-color: #f9f9f9;
     font-family: 'Raleway', sans-serif;
     min-width: 160px;
@@ -119,10 +119,12 @@ dd::before {
 }
 
 
-.gitLogo {
+.logoLink {
   text-align: center;
   margin: auto;
+  margin-bottom: 1em;
   display: block;
+  width: 10vw;
 }
 
 .sliding-middle-out {
@@ -141,6 +143,10 @@ dd::before {
 .sliding-middle-out:hover:after {
 	width: 100%;
 	background: #333333;
+}
+
+#facebookLogoFormat {
+  width: 20%;
 }
 
 #selectedPage {
@@ -310,7 +316,6 @@ dd::before {
     padding: 3em;
     margin-bottom: 20em;
     font-size: 60%;
-    background-color: rgba(255, 255, 255, 0.7);
   }
 
   .header {
