@@ -1,4 +1,4 @@
-body {
+body{
   overflow-y: scroll;
   background-color: #edeced;
   margin: 0;
@@ -118,6 +118,10 @@ dd::before {
   animation-play-state: running;
 }
 
+video {
+  width:100%;
+}
+
 
 .logoLink {
   text-align: center;
@@ -127,7 +131,7 @@ dd::before {
   width: 10vw;
 }
 
-.sliding-middle-out {
+.sliding-middle-out ul {
 	display: inline-block;
 	position: relative;
 	padding-bottom: 1px;
@@ -170,11 +174,11 @@ dd::before {
   position: absolute;
 }
 
-#backgroundImage img {
+.backgroundImage img {
   -webkit-transition: opacity 1s ease-in-out;
 }
 
-#backgroundImage img.top {
+#top {
   animation-name: crossFade;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;

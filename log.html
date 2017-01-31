@@ -1,156 +1,154 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>UP802983 2016/17</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" title="style" href="styles/stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>UP802983 2016/17</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" title="style" href="styles/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
 
-    <div id = "backgroundImage">
-      <img id=backgroundImageFormat src="images/chair.jpg" alt="Minimalist View of a Chair">
-      <img id=backgroundImageFormat class="top" src="images/typewriter.jpg" alt="Messy Desk with a Typewriter">
-    </div>
-    <header id = "webTitle">
-      <p class = "header">Log</p>
-      <p class = "subheadertitle">A brief history of the course.</p>
-      <div class = "scrollIndicator"></div>
-    </header>
+  <div id = "backgroundImage">
+    <img id=backgroundImageFormat src="images/typewriter.jpg" alt="Messy Desk with a Typewriter">
+  </div>
+  <header id = "webTitle">
+    <p class = "header">Log</p>
+    <p class = "subheadertitle">A brief history of the course.</p>
+    <div class = "scrollIndicator"></div>
+  </header>
 
-    <script src="menu.js">
-    </script>
-  </head>
-  <body>
-    <section class = "bodytext">
-      <p class = "subheader">WEB F1 (Web Foundation)</p>
-      <p class = "subsubheader">Starting a webserver with WINSCP</p>
-      <ul>
-        <li class = "bodyList">Connect to your VM using SSH (Secure Shell – e.g. PuTTY or the Chrome plugin).</li>
-        <li class = "bodyList">Select the “me” folder (where you have already uploaded your web page):</li>
-        <dd class = "bodyList">cd me↵</dd>
-        <li class = "bodyList">Run the Web server</li>
-        <dd class = "bodyList">http-server↵</dd>
-        <dd class = "bodyList">Ignore the IP addresses that the web server prints out.</dd>
-        <li class = "bodyList">Ignore the IP addresses that the web server prints out.</li>
-        <dd class = "bodyList">Note that the server prints out a couple of IP addresses that won't work. You need to use the IP address shown on <a href="http://port.ac.uk/myvm">http://port.ac.uk/myvm</a>!</dd>
-        <dd class = "bodyList">If you see the page you made, congratulations, you’ve just built and deployed a web site.</dd>
-        <dd class = "bodyList">If you don’t see your page, try and work out where and why it’s failing, and fix it!</dd>
-      </ul>
-      <p class = "subsubheader">Summary</p>
-      <p>
-        Over the past year in web foundations 1, we have been researching and studying the world wclasse web.
-        This entailed a literature review at the start of the year on reducing personal information exposure
-        on the web <a href=litreview.html>(see Literature Review)</a>.
-        This helped us develop the research skills that we will defiantly need later on In life and throughout this course.
-        Secondly we were tasked with the creation of a portfolio website (this on here!). This task tested our knowledge
-        of HTML and CSS. With this task, however, came some key lessons that we should take on when creating a website,
-        for instance, key designing elements and “un-written” rules that should be taken into account when creating a
-        successful website, for example, making sure to separate context from form. This is done using proper HTML and CSS
-        etiquette – making sure that all style and formatting is kept well and truly in the style sheet and all the content
-        is marked up properly on the HTML side/file.
-        Another key element to success web development and other forms of development was efficiency. We were taught proper
-        “manners” in term of both keeping your text editor open and full to the brim with add-ons at the same time, for
-        instance, ensuring your text size is as small as your corneas can physically handle to allow you to see the most
-        code on the screen at one single moment, and secondly to making sure your snippets.cson is packed full of lovely
-        short cuts to write as much code as possible with the least amount of key strokes.
-      </p>
+  <script src="menu.js"></script>
+  <section class = "bodytext">
+    <p class = "subheader">WEB F1 (Web Foundation)</p>
+    <p class = "subsubheader">Starting a webserver with WINSCP</p>
+    <ul>
+      <li class = "bodyList">Connect to your VM using SSH (Secure Shell – e.g. PuTTY or the Chrome plugin).</li>
+      <li class = "bodyList">Select the “me” folder (where you have already uploaded your web page):
+        <ul>
+          <li class = "bodyList">cd me↵</li>
+        </ul>
+      </li>
 
-      <p class = "subheader">CAR (Computer Architecture)</p>
-      <p class = "subsubheader">Useful relationships</p>
-      <ul>
-        <li class = "bodyList">A + 0 = A  </li>
-        <li class = "bodyList">A + 1 = 1  </li>
-        <li class = "bodyList">A ^ 1 = A  </li>
-        <li class = "bodyList">A ^ 0 = 0  </li>
-        <li class = "bodyList">A + A’ = 1 </li>
-        <li class = "bodyList">A ^ A’ = 0  </li>
-      </ul>
-      <ul>
-        <p class = "subsubheader">Commands DOS/UNIX</p>
-        <li class = "bodyList">Change Directory - cd/cd</li>
-        <li class = "bodyList">Change File Protection - attrib/chmod</li>
-        <li class = "bodyList">Compare Files - comp/diff</li>
-        <li class = "bodyList">Copy File - copy/cp</li>
-        <li class = "bodyList">Delete File - del/rm</li>
-        <li class = "bodyList">Delete Directory - rd/rmdir</li>
-        <li class = "bodyList">Directory List - dir/ls (ls -l)</li>
-        <li class = "bodyList">Edit a File - edit/pico</li>
-        <li class = "bodyList">Environment - st/printenv</li>
-        <li class = "bodyList">Find String in File - find/grep</li>
-        <li class = "bodyList">help - help/man</li>
-        <li class = "bodyList">Make Directory - md/mkdir</li>
-        <li class = "bodyList">Move File - move/mv</li>
-        <li class = "bodyList">Rename File - ren/mv</li>
-        <li class = "bodyList">Show Date and Time - date, time/date</li>
-        <li class = "bodyList">Show Disk Space - chkdsk/df</li>
-        <li class = "bodyList">Show File - type/cat</li>
-        <li class = "bodyList">Show File by Screens - type filename | more/more</li>
-        <li class = "bodyList">Sort Data - sort/sort</li>
-      </ul>
+      <li class = "bodyList">Run the Web server
+        <ul>
+          <li class = "bodyList">http-server↵</li>
+          <li class = "bodyList">Ignore the IP addresses that the web server prints out.</li>
+        </ul>
+      </li>
 
-      <p class = "subheader">INTPROG (Intro' Programming)</p>
-      <p class = "subsubheader">Python</p>
-
-      <p class = "subsubheader">Java</p>
-
-      <p class = "subheader">INDADD (Databases)</p>
-      <p class = "subsubheader">SQL commands</p>
-      <ul>
-        <li class = "bodyList"> List all databases - SHOW DATABASES;</li>
-        <li class = "bodyList"> Create datebase - CREATE DATABASE [name];</li>
-        <li class = "bodyList"> Use a database - USE [name];</li>
-        <li class = "bodyList"> List tables in a database - SHOW TABLES;</li>
-        <li class = "bodyList"> Show the structure of a table - DESCRIBE [name];</li>
-        <li class = "bodyList"> Delete a database - DROP DATABASE [name];</li>
-        <li class = "bodyList"> <a href="http://port.ac.uk/myvm">login</a> = mysql -u root -p root</li>
-      </ul>
-
-      <p class = "subheader">NETFUN (Networking)</p>
-      <p class = "subsubheader">General Ignorance</p>
-      <ul>
-        <li class = "bodyList"> Latency - Measured in milliseconds</li>
-        <li class = "bodyList"> Reliablity - Some tasks need less reliablity than other. Credit card payments need more reliablity than a confirmation email.</li>
-        <li class = "bodyList"> 10 Base T = 10 mbits/s = capacity of network.</li>
-        <li class = "bodyList"> Hub - Half duplex. Sends packets to all nodes</li>
-        <li class = "bodyList"> Switch - Full duplex. Only sends packets to the correct recipient.</li>
-        <li class = "bodyList"> Periodic signal - Follows a pattern.</li>
-        <li class = "bodyList"> Aperiodic signal - Doesn't follow a pattern.</li>
-        <li class = "bodyList"> Time = 1/frequency(Amount of time it takes to complete one signal)</li>
-        <li class = "bodyList"> Low frequency - higher strength, and the further it can go</li>
-        <li class = "bodyList"> Peer to Peer </li>
-        <dd class = "bodyList"> Advantages - Instantly send files between peers in network</dd>
-        <dd class = "bodyList"> Disadvantages - A virus can spread through the entire network and access all files</dd>
-      </ul>
-        <p class = "bodyTextFooter">up802983 | <a href="http://port.ac.uk" title="University of Portsmouth Website">University of Portsmouth</a> 2016-2017</p>
-    </section>
-
-    <ul class="menubar">
-      <nav class="sliding-middle-out">
-        <li><a href="index.html">Home</a></li>
-      </nav>
-      <nav class="sliding-middle-out">
-        <li><a href="log.html" id="selectedPage">Log</a></li>
-      </nav>
-      <nav class="sliding-middle-out">
-        <li><a href="litreview.html">Literature review</a></li>
-      </nav>
-      <nav class="sliding-middle-out">
-        <li><a href="video.html">Video</a></li>
-      </nav>
-      <nav class="sliding-middle-out">
-        <li><a href="project.html">Project</a></li>
-      </nav>
-      <li id="shiftRight"><a href="https://github.com/omarali0703"><img src="images/GitHub-Mark-32px.png" alt="Github logo link"></a></li>
+      <li class = "bodyList">Ignore the IP addresses that the web server prints out.
+        <ul>
+          <li class = "bodyList">Note that the server prints out a couple of IP addresses that won't work. You need to use the IP address shown on <a href="http://port.ac.uk/myvm">http://port.ac.uk/myvm</a>!</li>
+          <li class = "bodyList">If you see the page you made, congratulations, you’ve just built and deployed a web site.</li>
+          <li class = "bodyList">If you don’t see your page, try and work out where and why it’s failing, and fix it!</li>
+        </ul>
+      </li>
     </ul>
-    <nav class="dropdown">
-      <button onclick="toggle()" class="dropbtn">☰</button>
-      <nav id="myDropdown" class="dropdown-content">
-        <a href="index.html">Home</a>
-        <a href="litreview.html">Literature Review</a>
-        <a href="video.html">Video</a>
-        <a href="log.html">Log</a>
-        <a href="project.html">Project</a>
-      </nav>
+    <p class = "subsubheader">Summary</p>
+    <p>
+      Over the past year in web foundations 1, we have been researching and studying the world wclasse web.
+      This entailed a literature review at the start of the year on reducing personal information exposure
+      on the web <a href=litreview.html>(see Literature Review)</a>.
+      This helped us develop the research skills that we will defiantly need later on In life and throughout this course.
+      Secondly we were tasked with the creation of a portfolio website (this on here!). This task tested our knowledge
+      of HTML and CSS. With this task, however, came some key lessons that we should take on when creating a website,
+      for instance, key designing elements and “un-written” rules that should be taken into account when creating a
+      successful website, for example, making sure to separate context from form. This is done using proper HTML and CSS
+      etiquette – making sure that all style and formatting is kept well and truly in the style sheet and all the content
+      is marked up properly on the HTML side/file.
+      Another key element to success web development and other forms of development was efficiency. We were taught proper
+      “manners” in term of both keeping your text editor open and full to the brim with add-ons at the same time, for
+      instance, ensuring your text size is as small as your corneas can physically handle to allow you to see the most
+      code on the screen at one single moment, and secondly to making sure your snippets.cson is packed full of lovely
+      short cuts to write as much code as possible with the least amount of key strokes.
+    </p>
+
+    <p class = "subheader">CAR (Computer Architecture)</p>
+    <p class = "subsubheader">Useful relationships</p>
+    <ul>
+      <li class = "bodyList">A + 0 = A  </li>
+      <li class = "bodyList">A + 1 = 1  </li>
+      <li class = "bodyList">A ^ 1 = A  </li>
+      <li class = "bodyList">A ^ 0 = 0  </li>
+      <li class = "bodyList">A + A’ = 1 </li>
+      <li class = "bodyList">A ^ A’ = 0  </li>
+    </ul>
+    <p class = "subsubheader">Commands DOS/UNIX</p>
+    <ul>
+      <li class = "bodyList">Change Directory - cd/cd</li>
+      <li class = "bodyList">Change File Protection - attrib/chmod</li>
+      <li class = "bodyList">Compare Files - comp/diff</li>
+      <li class = "bodyList">Copy File - copy/cp</li>
+      <li class = "bodyList">Delete File - del/rm</li>
+      <li class = "bodyList">Delete Directory - rd/rmdir</li>
+      <li class = "bodyList">Directory List - dir/ls (ls -l)</li>
+      <li class = "bodyList">Edit a File - edit/pico</li>
+      <li class = "bodyList">Environment - st/printenv</li>
+      <li class = "bodyList">Find String in File - find/grep</li>
+      <li class = "bodyList">help - help/man</li>
+      <li class = "bodyList">Make Directory - md/mkdir</li>
+      <li class = "bodyList">Move File - move/mv</li>
+      <li class = "bodyList">Rename File - ren/mv</li>
+      <li class = "bodyList">Show Date and Time - date, time/date</li>
+      <li class = "bodyList">Show Disk Space - chkdsk/df</li>
+      <li class = "bodyList">Show File - type/cat</li>
+      <li class = "bodyList">Show File by Screens - type filename | more/more</li>
+      <li class = "bodyList">Sort Data - sort/sort</li>
+    </ul>
+
+    <p class = "subheader">INTPROG (Intro' Programming)</p>
+    <p class = "subsubheader">Python</p>
+
+    <p class = "subsubheader">Java</p>
+
+    <p class = "subheader">INDADD (Databases)</p>
+    <p class = "subsubheader">SQL commands</p>
+    <ul>
+      <li class = "bodyList"> List all databases - SHOW DATABASES;</li>
+      <li class = "bodyList"> Create datebase - CREATE DATABASE [name];</li>
+      <li class = "bodyList"> Use a database - USE [name];</li>
+      <li class = "bodyList"> List tables in a database - SHOW TABLES;</li>
+      <li class = "bodyList"> Show the structure of a table - DESCRIBE [name];</li>
+      <li class = "bodyList"> Delete a database - DROP DATABASE [name];</li>
+      <li class = "bodyList"> <a href="http://port.ac.uk/myvm">login</a> = mysql -u root -p root</li>
+    </ul>
+
+    <p class = "subheader">NETFUN (Networking)</p>
+    <p class = "subsubheader">General Ignorance</p>
+    <ul>
+      <li class = "bodyList"> Latency - Measured in milliseconds</li>
+      <li class = "bodyList"> Reliablity - Some tasks need less reliablity than other. Credit card payments need more reliablity than a confirmation email.</li>
+      <li class = "bodyList"> 10 Base T = 10 mbits/s = capacity of network.</li>
+      <li class = "bodyList"> Hub - Half duplex. Sends packets to all nodes</li>
+      <li class = "bodyList"> Switch - Full duplex. Only sends packets to the correct recipient.</li>
+      <li class = "bodyList"> Periodic signal - Follows a pattern.</li>
+      <li class = "bodyList"> Aperiodic signal - Doesn't follow a pattern.</li>
+      <li class = "bodyList"> Time = 1/frequency(Amount of time it takes to complete one signal)</li>
+      <li class = "bodyList"> Low frequency - higher strength, and the further it can go</li>
+      <li class = "bodyList"> Peer to Peer
+        <ul>
+          <li class = "bodyList"> Advantages - Instantly send files between peers in network</li>
+          <li class = "bodyList"> Disadvantages - A virus can spread through the entire network and access all files</li>
+        </ul>
+      </li>
+    </ul>
+    <p class = "bodyTextFooter">up802983 | <a href="http://port.ac.uk" title="University of Portsmouth Website">University of Portsmouth</a> 2016-2017 | <a href="http://validator.w3.org/check?uri=referer">validate this page!</a></p>
+  </section>
+
+  <ul class="menubar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="log.html" id="selectedPage">Log</a></li>
+    <li><a href="litreview.html">Literature review</a></li>
+    <li><a href="video.html">Video</a></li>
+    <li><a href="project.html">Project</a></li>
+    <li id="shiftRight"><a href="https://github.com/omarali0703"><img src="images/GitHub-Mark-32px.png" alt="Github logo link"></a></li>
+  </ul>
+  <nav class="dropdown">
+    <button onclick="toggle()" class="dropbtn">☰</button>
+    <nav id="myDropdown" class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="litreview.html">Literature Review</a>
+      <a href="video.html">Video</a>
+      <a href="log.html">Log</a>
+      <a href="project.html">Project</a>
     </nav>
-  </body>
+  </nav>
 </html>

@@ -1,63 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>UP802983 2016/17</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" title="style" href="styles/stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>UP802983 2016/17</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" title="style" href="styles/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
 
-    <div id = "backgroundImage">
-      <img id=backgroundImageFormat src="images/chair.jpg" alt="Minimalist View of a Chair">
-      <img id=backgroundImageFormat class="top" src="images/typewriter.jpg" alt="Messy Desk with a Typewriter">
-    </div>
+  <div id = "backgroundImage">
+    <img id=backgroundImageFormat src="images/typewriter.jpg" alt="Messy Desk with a Typewriter">
+  </div>
 
-    <header id = "webTitle">
-      <p class = "header">Video</p>
-      <p class = "subheadertitle">Here's my video!</p>
-      <div class = "scrollIndicator"></div>
-    </header>
+  <header id = "webTitle">
+    <p class = "header">Video</p>
+    <p class = "subheadertitle">Here's my video!</p>
+    <div class = "scrollIndicator"></div>
+  </header>
 
-    <script src="menu.js">
-    </script>
-    <section class="bodytext">
-      <p class="subheader"> My video</p>
-      <p class="subsubheader"> my house aquarium (Taken 3rd of January 2017)</p>
-      <video width="100%" controls>
-        <source src="images/vid.mp4" type="video/mp4">
-      </video>
-      <p class = "bodyTextFooter">up802983 | <a href="http://port.ac.uk" title="University of Portsmouth Website">University of Portsmouth</a> 2016-2017</p>
-    </section>
+  <script src="menu.js">
+  </script>
+  <section class="bodytext">
+    <p class="subheader"> My video</p>
+    <p class="subsubheader"> my house aquarium (Taken 3rd of January 2017)</p>
+    <video controls>
+      <source src="images/vid.mp4" type="video/mp4">
+      <track label="English" kind="subtitles" srclang="en" src="subtitles.vtt" default>
+    </video>
+    <p class = "bodyTextFooter">up802983 | <a href="http://port.ac.uk" title="University of Portsmouth Website">University of Portsmouth</a> 2016-2017 | <a href="http://validator.w3.org/check?uri=referer">validate this page!</a></p>
+  </section>
 
-  </head>
-  <body>
-    <ul class="menubar">
-      <nav class="sliding-middle-out">
-        <li><a href="index.html">Home</a></li>
-      </nav>
-      <nav class="sliding-middle-out">
-        <li><a href="log.html">Log</a></li>
-      </nav>
-      <nav class="sliding-middle-out">
-        <li><a href="litreview.html">Literature review</a></li>
-      </nav>
-      <nav class="sliding-middle-out">
-        <li><a href="video.html" id="selectedPage">Video</a></li>
-      </nav>
-      <nav class="sliding-middle-out">
-        <li><a href="project.html">Project</a></li>
-      </nav>
-      <li id="shiftRight"><a href="https://github.com/omarali0703"><img src="images/GitHub-Mark-32px.png" alt="Github logo link"></a></li>
-    </ul>
-    <nav class="dropdown">
-      <button onclick="toggle()" class="dropbtn">☰</button>
-      <nav id="myDropdown" class="dropdown-content">
-        <a href="index.html">Home</a>
-        <a href="litreview.html">Literature Review</a>
-        <a href="video.html">Video</a>
-        <a href="log.html">Log</a>
-        <a href="project.html">Project</a>
-      </nav>
+  <ul class="menubar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="log.html">Log</a></li>
+    <li><a href="litreview.html">Literature review</a></li>
+    <li><a href="video.html" id="selectedPage">Video</a></li>
+    <li><a href="project.html">Project</a></li>
+    <li id="shiftRight"><a href="https://github.com/omarali0703"><img src="images/GitHub-Mark-32px.png" alt="Github logo link"></a></li>
+  </ul>
+
+  <nav class="dropdown">
+    <button onclick="toggle()" class="dropbtn">☰</button>
+    <nav id="myDropdown" class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="litreview.html">Literature Review</a>
+      <a href="video.html">Video</a>
+      <a href="log.html">Log</a>
+      <a href="project.html">Project</a>
     </nav>
-  </body>
+  </nav>
+
 </html>
