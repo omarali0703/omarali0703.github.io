@@ -18,30 +18,7 @@
   <script src="menu.js"></script>
   <section class = "bodytext">
     <p class = "subheader">WEB F1 (Web Foundation)</p>
-    <p class = "subsubheader">Starting a webserver with WINSCP</p>
-    <ul>
-      <li class = "bodyList">Connect to your VM using SSH (Secure Shell – e.g. PuTTY or the Chrome plugin).</li>
-      <li class = "bodyList">Select the “me” folder (where you have already uploaded your web page):
-        <ul>
-          <li class = "bodyList">cd me↵</li>
-        </ul>
-      </li>
 
-      <li class = "bodyList">Run the Web server
-        <ul>
-          <li class = "bodyList">http-server↵</li>
-          <li class = "bodyList">Ignore the IP addresses that the web server prints out.</li>
-        </ul>
-      </li>
-
-      <li class = "bodyList">Ignore the IP addresses that the web server prints out.
-        <ul>
-          <li class = "bodyList">Note that the server prints out a couple of IP addresses that won't work. You need to use the IP address shown on <a href="http://port.ac.uk/myvm">http://port.ac.uk/myvm</a>!</li>
-          <li class = "bodyList">If you see the page you made, congratulations, you’ve just built and deployed a web site.</li>
-          <li class = "bodyList">If you don’t see your page, try and work out where and why it’s failing, and fix it!</li>
-        </ul>
-      </li>
-    </ul>
     <p class = "subsubheader">Summary</p>
     <p>
       Over the past year in web foundations 1, we have been researching and studying the world wclasse web.
@@ -60,77 +37,116 @@
       code on the screen at one single moment, and secondly to making sure your snippets.cson is packed full of lovely
       short cuts to write as much code as possible with the least amount of key strokes.
     </p>
-
-    <p class = "subheader">CAR (Computer Architecture)</p>
-    <p class = "subsubheader">Useful relationships</p>
+    <p class = "subheader">Work Log</p>
+    <p class = "subsubheader">Web Security key concepts</p>
     <ul>
-      <li class = "bodyList">A + 0 = A  </li>
-      <li class = "bodyList">A + 1 = 1  </li>
-      <li class = "bodyList">A ^ 1 = A  </li>
-      <li class = "bodyList">A ^ 0 = 0  </li>
-      <li class = "bodyList">A + A’ = 1 </li>
-      <li class = "bodyList">A ^ A’ = 0  </li>
-    </ul>
-    <p class = "subsubheader">Commands DOS/UNIX</p>
-    <ul>
-      <li class = "bodyList">Change Directory - cd/cd</li>
-      <li class = "bodyList">Change File Protection - attrib/chmod</li>
-      <li class = "bodyList">Compare Files - comp/diff</li>
-      <li class = "bodyList">Copy File - copy/cp</li>
-      <li class = "bodyList">Delete File - del/rm</li>
-      <li class = "bodyList">Delete Directory - rd/rmdir</li>
-      <li class = "bodyList">Directory List - dir/ls (ls -l)</li>
-      <li class = "bodyList">Edit a File - edit/pico</li>
-      <li class = "bodyList">Environment - st/printenv</li>
-      <li class = "bodyList">Find String in File - find/grep</li>
-      <li class = "bodyList">help - help/man</li>
-      <li class = "bodyList">Make Directory - md/mkdir</li>
-      <li class = "bodyList">Move File - move/mv</li>
-      <li class = "bodyList">Rename File - ren/mv</li>
-      <li class = "bodyList">Show Date and Time - date, time/date</li>
-      <li class = "bodyList">Show Disk Space - chkdsk/df</li>
-      <li class = "bodyList">Show File - type/cat</li>
-      <li class = "bodyList">Show File by Screens - type filename | more/more</li>
-      <li class = "bodyList">Sort Data - sort/sort</li>
-    </ul>
-
-    <p class = "subheader">INTPROG (Intro' Programming)</p>
-    <p class = "subsubheader">Python</p>
-
-    <p class = "subsubheader">Java</p>
-
-    <p class = "subheader">INDADD (Databases)</p>
-    <p class = "subsubheader">SQL commands</p>
-    <ul>
-      <li class = "bodyList"> List all databases - SHOW DATABASES;</li>
-      <li class = "bodyList"> Create datebase - CREATE DATABASE [name];</li>
-      <li class = "bodyList"> Use a database - USE [name];</li>
-      <li class = "bodyList"> List tables in a database - SHOW TABLES;</li>
-      <li class = "bodyList"> Show the structure of a table - DESCRIBE [name];</li>
-      <li class = "bodyList"> Delete a database - DROP DATABASE [name];</li>
-      <li class = "bodyList"> <a href="http://port.ac.uk/myvm">login</a> = mysql -u root -p root</li>
-    </ul>
-
-    <p class = "subheader">NETFUN (Networking)</p>
-    <p class = "subsubheader">General Ignorance</p>
-    <ul>
-      <li class = "bodyList"> Latency - Measured in milliseconds</li>
-      <li class = "bodyList"> Reliablity - Some tasks need less reliablity than other. Credit card payments need more reliablity than a confirmation email.</li>
-      <li class = "bodyList"> 10 Base T = 10 mbits/s = capacity of network.</li>
-      <li class = "bodyList"> Hub - Half duplex. Sends packets to all nodes</li>
-      <li class = "bodyList"> Switch - Full duplex. Only sends packets to the correct recipient.</li>
-      <li class = "bodyList"> Periodic signal - Follows a pattern.</li>
-      <li class = "bodyList"> Aperiodic signal - Doesn't follow a pattern.</li>
-      <li class = "bodyList"> Time = 1/frequency(Amount of time it takes to complete one signal)</li>
-      <li class = "bodyList"> Low frequency - higher strength, and the further it can go</li>
-      <li class = "bodyList"> Peer to Peer
+      <li> Ensure that passwords are changed frequently </li>
+      <li> Prevent information that is personal to you from being inadvertently revealed>
         <ul>
-          <li class = "bodyList"> Advantages - Instantly send files between peers in network</li>
-          <li class = "bodyList"> Disadvantages - A virus can spread through the entire network and access all files</li>
+          <li> Through sharing photos </li>
+          <li> Unintended information leaks such as mothers maiden name. This could be retrieved but going onto sical media and seaching
+                                  through someones page </li>
+        </ul>
+      </li>
+      <li>Key stroke trackers
+        <ul>
+          <li> Ensure that, before you turn on any computers, there are no USB flash drives attached to the computer.</li>
+          <li>These are able to track and store all the key stroke inputs from the keyboard. This will allow a hacker to
+              easily obtain any passwords or personal information about you including bank details, if you are filling
+              out any bank forms. </li>
+        </ul>
+      </li>
+      <li>Phishing
+        <ul>
+          <li>This is the process of tricking someone into inputting personal details into a fake online form. </li>
+          <li>These forms are usually disguised as trust worthy pages and can look very similar to other, real, data
+              entry forms </li>
         </ul>
       </li>
     </ul>
-    <p class = "bodyTextFooter">up802983 | <a href="http://port.ac.uk" title="University of Portsmouth Website">University of Portsmouth</a> 2016-2017 | <a href="http://validator.w3.org/check?uri=referer">validate this page!</a></p>
+
+    <p class="subsubheader">HTML Introduction</p>
+
+    <p class = "subsubheader">Starting a webserver with WINSCP</p>
+    <ul>
+      <li>Connect to your VM using SSH (Secure Shell – e.g. PuTTY or the Chrome plugin).</li>
+      <li>Select the “me” folder (where you have already uploaded your web page):
+        <ul>
+          <li>cd me↵</li>
+        </ul>
+      </li>
+
+      <li>Run the Web server
+        <ul>
+          <li>http-server↵</li>
+        </ul>
+      </li>
+
+      <li>Ignore the IP addresses that the web server prints out.
+        <ul>
+          <li>Note that the server prints out a couple of IP addresses that won't work. You need to use the IP address shown on <a href="http://port.ac.uk/myvm">http://port.ac.uk/myvm</a>!</li>
+          <li>If you see the page you made, congratulations, you’ve just built and deployed a web site.</li>
+          <li>If you don’t see your page, try and work out where and why it’s failing, and fix it!</li>
+        </ul>
+      </li>
+    </ul>
+    <p class = "subsubheader">Types of Markup</p>
+    <p> Procedural Markup - Focuses on how it looks and what to do. (Based of a WYSIWYG basis) </p>
+    <p> Descriptive Markup - Focuses on describing the content rather than the formatting and visual aspects. Using proper semantics to describe the content.
+        This better allows the developer to seperate the form from the content of the webpage.</p>
+    <p class="subsubheader"> Basic HTML tags </p>
+    <ul>
+      <li> !doctype html - declares that the website is using HTML 5 </li>
+      <li> html - declares the start and end of that HTML file</li>
+    </ul>
+    <p class ="subsubheader"> HTML semantics </p>
+    <p> Semantics are used to clearly define the meaning to both the webpage and the developer. they are much better
+        than using a div tag as div tags are ambiguous
+    </p>
+    <ul>
+      <li> section - proper semantic tag for a section of a webpage </li>
+      <li> footer - proper semantic tag for a footer of a webpage </li>
+      <li> header - proper semantic tag for a header on a webpage </li>
+      <li> aside - proper semantic tag for a section that is next to a section</li>
+      <li> article - proper semantic tag for a section containing an article </li>
+    </ul>
+    <p class = "subsubheader"> Design </p>
+    <p>
+      Users want to feel accepted and accomplished when they are on and use a webpage. Affective design,
+      with the demographics and psychographics of the primary user, considered will ensure
+      that this takes place and that the user is most comfortable when using the site. Placement of elements,
+      the choice of colour, and the amount of content on the page, all tie together when creating an outstanding
+      design.
+      Users want to part-take in as little learning as possible when using a webpage as attention span may be
+      limited - based on the primary user.
+      Web designers must be focused on creating a design that doesn't overload the user with content and information as well as
+      adding enough to draw the attention of the user. Not too boring, not too hectic.
+      A concept to remember when designing an affective design, is considering how much you can remove from the design
+      before it loses purpose. You want the minimal amount on the page to do its job - Further increasing load times of the
+      site as well as not crowding the page with unnecessary images and content.
+
+      "Design isn't just how it looks, it's how it works." - Steve Jobs.
+    </p>
+    <p class = "subsubheader"> Usability </p>
+    <p>
+      The first thing that comes to mind when considering usability is the primary users mental model. What are your primary
+      users used to? Are they behind a desk using word all day? Are they playing video games until 3 in the morning?
+      When these specific users are interacting with your page, they will have certain expectations, where buttons should be
+      placed, what icons mean etc.. These aspects should be considered when designing the webpage layout and
+      style. Perhaps your user is a big mobile user, when they access a webpage where are their eyes going to go first? Where
+      will they go to navigate pages? How much information are they used to seeing before losing interest.
+      Beta testing a page can be an effective way to flag up any elements that may be causing issues or elements that are being
+      used constantly. The use of website cookies will allow the developer/company/organisation see exactly where the users are going
+      when they use the page. These can then be addressed to ensure that the user can find/locate them much easier in the next iteration
+      of the page. 
+
+    <p class = "subsubheader"> Accessability </p>
+    <p class = "subsubheader"> Key Concepts </p>
+
+    <p class = "subsubheader"> Graphics </p>
+    <p class = "subsubheader"> Image Types </p>
+
+<p class = "bodyTextFooter">up802983 | <a href="http://port.ac.uk" title="University of Portsmouth Website">University of Portsmouth</a> 2016-2017 | <a href="http://validator.w3.org/check?uri=referer">validate this page!</a></p>
   </section>
 
   <ul class="menubar">

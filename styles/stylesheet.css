@@ -45,7 +45,7 @@ dd::before {
     font-family: 'Raleway', sans-serif;
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 24px;
     border: none;
     top: 0;
     cursor: pointer;
@@ -64,7 +64,8 @@ dd::before {
 .dropdown-content {
     display: none;
     position: fixed;
-    top: 3.2em;
+    top: 2.3em;
+    font-size: 170%;
     background-color: #f9f9f9;
     font-family: 'Raleway', sans-serif;
     min-width: 160px;
@@ -83,6 +84,10 @@ dd::before {
 .show {display:block;}
 /*
 */
+
+.imageContent {
+  width: 100%;
+}
 .menubar {
   margin: 0 auto;
   padding:0;
@@ -131,24 +136,6 @@ video {
   width: 10vw;
 }
 
-.sliding-middle-out ul {
-	display: inline-block;
-	position: relative;
-	padding-bottom: 1px;
-}
-.sliding-middle-out:after {
-	content: '';
-	display: block;
-	margin: auto;
-	height: 2px;
-	width: 0px;
-	transition: width .9s ease, background-color .9s ease;
-}
-.sliding-middle-out:hover:after {
-	width: 100%;
-	background: #333333;
-}
-
 #facebookLogoFormat {
   width: 20%;
 }
@@ -158,7 +145,7 @@ video {
 }
 
 #backgroundImageFormat {
-  width:150em;
+  width:170em;
   left: -1em;
   top: -20em;
   margin: 0 auto;
@@ -173,34 +160,6 @@ video {
   border: 0;
   position: absolute;
 }
-
-.backgroundImage img {
-  -webkit-transition: opacity 1s ease-in-out;
-}
-
-#top {
-  animation-name: crossFade;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 30s;
-  animation-direction: alternate;
-}
-
-@keyframes crossFade {
-  0% {
-    opacity:1;
-  }
-  45% {
-    opacity:1;
-  }
-  55% {
-    opacity:0;
-  }
-  100% {
-    opacity:0;
-  }
-}
-
 #shiftRight {
   float: right;
 }
@@ -213,7 +172,7 @@ video {
   position: relative;
 }
 
-.bodyList {
+ul > li {
   list-style: decimal;
   color:#333333;
   margin-left: 3em;
@@ -233,7 +192,7 @@ video {
 .subheader {
   font-weight: 100;
   font-family: 'Raleway', sans-serif;
-  font-size: 2.6vw;
+  font-size: 140%;
   text-transform: uppercase;
   border-top: 1px #d6d6d6 solid;
   color: #474747;
@@ -242,18 +201,21 @@ video {
 .subheadertitle {
   font-weight: 100;
   font-family: 'Raleway', sans-serif;
-  font-size: 3.5vw;
+  font-size: 140%;
   text-transform: uppercase;
   text-align: justify;
   color: white;
 }
 
 .subsubheader {
-  font-weight: 100;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.9vw;
+  font-size: 120%;
   text-transform: uppercase;
-  color : #333333;
+  color : black;
+}
+
+.subsubheader::after {
+  content: " - ";
 }
 
 .scrollIndicator {
@@ -275,7 +237,7 @@ video {
   margin-bottom: 10em;
   text-align: left;
   width: 50%;
-  padding: 9em;
+  padding: 4em;
   padding-top: 3em;
   padding-bottom: 3em;
   background-color: rgba(255, 255, 255, 1);
@@ -298,7 +260,7 @@ video {
   margin-left: 3em;
 }
 
-@media screen and (max-width: 781px) {
+@media screen and (max-width: 1025px) {
   ul {
     bottom: auto;
   }
@@ -317,9 +279,10 @@ video {
   }
 
   .bodytext {
-    padding: 3em;
+    padding: 1em;
+    width: 80%;
     margin-bottom: 20em;
-    font-size: 60%;
+    font-size: 120%;
   }
 
   .header {
