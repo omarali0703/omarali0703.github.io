@@ -110,6 +110,25 @@
       <li> aside - proper semantic tag for a section that is next to a section</li>
       <li> article - proper semantic tag for a section containing an article </li>
     </ul>
+    <p class = "subsubheader"> CSS </p>
+    <p>
+      CSS is a dynamic way to format a webpage. It allows the user to describe the format and design of the page. This
+      works through a combination of editing existing HTML tags (body, li, ul etc.) and creating classes and ids. These allow you to
+      specificly design/edit different aspects of the webpage. Classes are designed to let you assign the same style to multiple elements
+      on the page, whereas id's let you specifically change one element. These can be combined to create very elegent and specifc designs
+      and formats on the webpage.
+    </p>
+    <p>
+      inline CSS involves placing the CSS inside the HTML file. This is particularly useful for testing specific elements on the webpage before
+      making any design choice final. However, it is the correct practice to separate the form/design from the content of the webpage.
+    </p>
+    <p>
+      external CSS involves relocating the style sheet code into an external file and then linking to it in the head of the HTML page.
+      This is much better practice as it allows the page to only have to load the CSS file once and save it in cache. this makes page loading times
+      much faster as the style code doesn't have to be read everytime another page is loaded, this in turn reduces the file size of the HTML files
+      further increasing the load times of the webpage.
+    </p>
+    <p class = "subsubheader"> Advanced CSS </p>
     <p class = "subsubheader"> Design </p>
     <p>
       Users want to feel accepted and accomplished when they are on and use a webpage. Affective design,
@@ -141,11 +160,62 @@
       of the page. 
 
     <p class = "subsubheader"> Accessability </p>
-    <p class = "subsubheader"> Key Concepts </p>
+    <p>
+      It is important that anyone using any webpage can access and use any part of the website to its full potential.
+     Therefore it obvious that any form of disability/language barrier is taken into account when dealing with how accessible your webpage is.
+     Techniques to allow anyone to view your webpage can include clear HTML semantics and/or alt tags to allow any text-to-speak to clearly read all the
+     text on the screen. any videos that are present on the page should be close-captioned to allow anyone who is deaf to understand
+     clearly what is going on in the video.
+     Colour schemes are also an important aspect to consider. Firstly, it has been
+     proven that particular colour schemes (navy-blue text on a cream background) can improve the reading of people with dyslexia.
+     Another aspect of colour schemes is colour-blindness. Using specific shades of colour next to one another, can cause it to not be visible all together.
+     Text should always be placed atop a background colour that contrasts the font colour. This will ensure that the user, should they be colour blind,
+     has the best chance at reading the content on the page.
 
+    </p>
     <p class = "subsubheader"> Graphics </p>
-    <p class = "subsubheader"> Image Types </p>
+    <ul>
+      <li>
+        GIF
+        <ul>
+          <li>
+            This is a low resolution image format that supports animation. They support a 8 bit colour range meaning that in order
+            for the image to support particular colours they must use a technique called ditering. This involves taking two pixels or different colours and
+            placing them next to each other. When the image is then viewed at 100% or less, the images colours appear to blend together creating the desired shade
+          </li>
+        </ul>
+      </li>
 
+      <li>
+        SVG
+        <ul>
+          <li>
+            This is less of an image and more of a "text" file. Based of xml and html semantic, SVGs are files that tell the webpage how to draw particular graphics.
+            This means that they are essentially being generated. They are not a bitmap and therefore their "resolution" isn't deminished when resized.
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        PNG
+        <ul>
+          <li>
+            These are bitmaped images that support up to 24 bits of colour (8 bits per channel) for RGB and 32 bits of colour for RGBA (transparency). They also
+            support lossless image compression meaning that they do not lose any detail/resolution when compressed.
+          </li>
+        </ul>
+      </li>
+      <li>
+        JPEG
+        <ul>
+          <li>
+            JPEGs are know as a lossy image format. This means that they lose a small amount of detail when they compressed. They support full colour (24 bits). However,
+            as said before, they do not compress well with large areas of similar colour and very rarely can they deal with sharp lines, often bluring them completly when
+            compressing them.
+          </li>
+        </ul>
+      </li>
+    </ul>
 <p class = "bodyTextFooter">up802983 | <a href="http://port.ac.uk" title="University of Portsmouth Website">University of Portsmouth</a> 2016-2017 | <a href="http://validator.w3.org/check?uri=referer">validate this page!</a></p>
   </section>
 

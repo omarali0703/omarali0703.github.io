@@ -311,4 +311,8 @@ ul > li {
   .menubar {
     display: none;
   }
+
+  #backgroundImageFormat {
+    opacity: 0.7;
+  }
 }
